@@ -113,6 +113,7 @@ jobs:
           restore-keys: hugo-
 
       - name: Build
+        working-directory: ./hugo_idm_thesis
         run: |
           echo "Building the project..."
           hugo build \
