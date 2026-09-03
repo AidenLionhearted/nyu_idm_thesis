@@ -129,11 +129,10 @@ jobs:
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
 
       - name: Upload artifact
-        working-directory: ./hugo_idm_thesis
         uses: actions/upload-pages-artifact@v5
         with:
           include-hidden-files: false
-          path: ./public
+          path: ./hugo_idm_thesis/public
   deploy:
     runs-on: ubuntu-latest
     needs: build
