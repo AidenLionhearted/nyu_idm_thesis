@@ -1,0 +1,3 @@
+[submodule "hugo_idm_thesis/themes/rewired"]
+	path = hugo_idm_thesis/themes/rewired
+	url = https://github.com/riglegit/rewired
