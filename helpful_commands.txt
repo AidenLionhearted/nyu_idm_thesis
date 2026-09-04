@@ -1,0 +1,2 @@
+## Pull down Hugo theme when theme directory is empty
+git submodule update --init --recursive
