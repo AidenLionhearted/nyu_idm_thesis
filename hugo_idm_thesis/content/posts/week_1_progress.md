@@ -28,7 +28,7 @@ I was looking into software that would add the ability to annotate posts to my j
 ## Mind Map
 I created my mind map.  I found a program called XMind that has already built templates for mind maps.  It definitely looks better than anything I could manage in FigJam.  My mind map ended up being a retelling of my presentation that I gave in class.  But I figure this is fine because I already had a lot of details worked out at that point.  I may update it in the future.
 
-![Mind Map](mind_map.png)
+![Mind Map](../../static/mind_map.png)
 
 ## Experimenting with Twine
 I also worked with Twine today.  I set up a simple story to test with.  I'm having lots of fun with it.  I worked about an hour with it so far and I didn't want to stop.  I chose to so I could start creating this journal entry.
