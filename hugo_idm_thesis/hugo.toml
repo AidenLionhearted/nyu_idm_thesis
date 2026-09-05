@@ -1,4 +1,6 @@
-baseURL = '/'
+baseURL = 'https://aidenlionhearted.github.io/nyu_idm_thesis/'
 locale = 'en-us'
 title = "Aiden Boldes' Thesis Process Journal"
 theme = 'rewired'
+relativeURLs = true
+canonifyURLs = false
