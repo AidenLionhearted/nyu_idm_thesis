@@ -69,8 +69,8 @@ I also worked with Twine today.  I set up a simple story to test with.  I'm havi
 **This code does the following:**
 * Checks to see if the last passage you were in was called "Start"
     * If it is, it sets a variable called `my_var` to "testing"
-    * If it's not, print out "Variable isn't correct"
-* Check to see if the variable `my_var` is "testing"
+    * If it's not, it prints out "Variable isn't correct"
+* Checks to see if the variable `my_var` is "testing"
     * If it is, print "Variable is correct" and show a link to another passage
     * Nothing happens if the variable does not equal "testing"
 
