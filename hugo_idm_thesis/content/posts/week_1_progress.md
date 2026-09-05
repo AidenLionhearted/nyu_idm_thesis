@@ -31,9 +31,9 @@ I created my mind map.  I found a program called XMind that has already built te
 ![Mind Map](mind_map.png)
 
 ## Experimenting with Twine
-I also worked with Twine today.  I set up a simple story to test with.  I'm having lots of fun with it.  I worked about an hour with it so far and I didn't want to stop.  I chose to so I could start creating this journal entry.
+I also worked with Twine today.  I set up a simple story to test with.  I've decided to go with the default story format called [Harlowe](https://twine2.neocities.org/).  It has plenty of documentation and its manual is organized and thorough.  I'm having lots of fun with it.  I worked about an hour with it so far and I didn't want to stop.  I chose to so I could start creating this journal entry.
 
-### Terminology I learned:
+### Terminology I Learned
 * Story
     * The project itself
 * Passages
@@ -43,7 +43,7 @@ I also worked with Twine today.  I set up a simple story to test with.  I'm havi
 * Macros
     * Coding commands such as "set" and "if"
 
-### Coding I worked on:
+### Coding I Worked On
 * Navigation between passages
 * Setting Variables
 * Using `if/else` statements
@@ -77,3 +77,23 @@ I also worked with Twine today.  I set up a simple story to test with.  I'm havi
 ## Goals for Tomorrow
 * Experiment more with Twine
 * Test hosting ideas (web server, download link, etc)
+
+# 9/5/2026
+## Studying Harlowe Documentation 
+Today I looked through the Harlowe documentation trying to learn new terms and ways to code.  The concepts are similar to regular coding but the syntax is very different.  It makes it more compelling that way since I have to really pay attention and focus on my coding.  I have hit a point of frustration where the documentation's code samples assume you know other commands/markup and doesn't explain what they are or link you to the part of documentation that explains them.
+
+### Terminology I Learned
+* Prose
+    * Written text that is visible to the player
+* Hook
+    * Text made special by attaching macros and styling
+* Changers
+    * Modifiers to hooks, styling, and commands
+* Lambdas
+    * User created fuctions that add precision to macros
+* Enchantments
+    * Applies a changer or lambda to occurances of a hook or string in the passage it's included in
+
+## Goals for Tomorrow
+* Test hosting ideas (pushed from today)
+* Start project planning document
