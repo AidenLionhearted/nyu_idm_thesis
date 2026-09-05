@@ -9,7 +9,25 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play thesis_project.</tw-noscript></noscript></tw-story>
-<tw-storydata name="thesis_project" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="A6FCDA3F-6B16-47AD-B5D0-48B9A501C51B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="500,200" size="100,100"></tw-passagedata></tw-storydata>
+<tw-storydata name="thesis_project" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="A6FCDA3F-6B16-47AD-B5D0-48B9A501C51B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="500,200" size="100,100">Hello World
+
+
+[[Next Passage]]
+[[Another Passage]]</tw-passagedata><tw-passagedata pid="2" name="Next Passage" tags="" position="500,325" size="100,100">Next Passage!
+[[Another Passage]] </tw-passagedata><tw-passagedata pid="3" name="Another Passage" tags="" position="625,325" size="100,100">{
+	(if: (history:)&#39;s last is &quot;Start&quot;) [
+    	(set: $my_var to &quot;testing&quot;)
+		] 
+	(else:) [
+    	Variable isn&#39;t correct
+		]
+}
+{
+	(if: $my_var is &quot;testing&quot;) [
+		Variable is correct
+    	[[Secret Page]]
+	]
+}</tw-passagedata><tw-passagedata pid="4" name="Secret Page" tags="" position="625,450" size="100,100">You made it!</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
