@@ -14,11 +14,11 @@ toc:
 ---
 # 9/3/2026
 ## Journal Creation
-I decided to go with Github Pages as my journaling platform.  I did this because I want to store all my files in a GitHub repository.  This will make it easy to work on my project from any of my machines.
+I decided to go with GitHub Pages as my journaling platform.  I did this because I want to store all my files in a GitHub repository.  This will make it easy to work on my project from any of my machines.
 
 I chose [Hugo](https://gohugo.io/) as my backend.  It supports markdown format which I am familiar with and can use already built themes.  I chose [rewired](https://github.com/RigleGit/rewired) as my theme.  I liked it because it looked like a command line interface which reminds me of text based games.
 
-I was looking into software that would add the ability to annotate posts to my journal.  I was tinkering with the idea of putting my documents on my Github Pages site.  But this didn't work.  I'm guessing this is because I'm using a static site generator.  I wish I had figured that out earlier instead of wasting time on it.
+I was looking into software that would add the ability to annotate posts to my journal.  I was tinkering with the idea of putting my documents on my GitHub Pages site.  But this didn't work.  I'm guessing this is because I'm using a static site generator.  I wish I had figured that out earlier instead of wasting time on it.
 
 ## Goals for Tomorrow
 * Create mind map
@@ -26,7 +26,7 @@ I was looking into software that would add the ability to annotate posts to my j
 
 # 9/4/2026
 ## Mind Map
-I created my mind map.  I found a program called XMind that has already built templates for mind maps.  It definitely looks better than anything I could manage in FigJam.  My mind map ended up being a retelling of my presentation that I gave in class.  But I figure this is fine because I already had a lot of details worked out at that point.  I may update it in the future.
+I created my mind map.  I found a program called Xmind that has already built templates for mind maps.  It definitely looks better than anything I could manage in FigJam.  My mind map ended up being a retelling of my presentation that I gave in class.  But I figure this is fine because I already had a lot of details worked out at that point.  I may update it in the future.
 
 ![Mind Map](mind_map.png)
 
@@ -90,10 +90,45 @@ Today I looked through the Harlowe documentation trying to learn new terms and w
 * Changers
     * Modifiers to hooks, styling, and commands
 * Lambdas
-    * User created fuctions that add precision to macros
+    * User created functions that add precision to macros
 * Enchantments
-    * Applies a changer or lambda to occurances of a hook or string in the passage it's included in
+    * Applies a changer or lambda to occurrences of a hook or string in the passage it's included in
 
 ## Goals for Tomorrow
 * Test hosting ideas (pushed from today)
 * Start project planning document
+
+# 9/6/2026
+## Testing Hosting Ideas
+I wasted about two hours on this.  Twine stories are saved as raw HTML files.  I kept trying to embed it in a post on my GitHub Pages site.
+
+### Steps I Went Through on GitHub Pages/Hugo
+1. Uploaded my story's HTML file to my Hugo folder on GitHub
+2. Used a `div` tag to embed the file into an iframe
+3. Added permission to render HTML files in Hugo
+   * This enabled the iframe but the frame had a "Page Not Found" error
+4. Tried moving the HTML file to different directories so Hugo could find it
+   * This eventually worked but the embedded frame wouldn't show the entire page
+5. Tried putting the raw HTML directly into the post
+   * Hugo reported a security/allowed content error
+6. Added permission to allow using raw HTML in Hugo
+   * This didn't render well
+
+### Pivoting
+Eventually I decided I didn't want to spend more time on trying to get this to work.  I pivoted to posting an external link to the file instead.
+
+I started with Google Drive but the link just pulled up the raw code.  The user would have to then download it and open it locally.
+
+Next I tried Dropbox.  This actually worked.  When the user clicks the link it opens a Dropbox page that renders the actual game.
+
+## Project Planning Document
+I started my project planning document.  I'm putting it on my GitHub pages site so I can easily link to it.  I'm using markdown to make the weekly schedule as a table.  I have hit a road block however, weeks 10 - 15 have some ambiguous instructions for what is due on those weeks.
+
+## Goals for Tomorrow
+* Email my professor to ask about ambiguous entries in the class schedule
+* Work on the project planning document as much as I can until I can resolve the roadblock.
+
+# 9/7/2026
+## Project Planning Document
+I sent my professor an email this morning asking to clarify some of the schedule.  Meanwhile, I filled out the sections for resources and people needed.
+
