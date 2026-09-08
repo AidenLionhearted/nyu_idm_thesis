@@ -1,9 +1,65 @@
 baseURL = 'https://aidenlionhearted.github.io/nyu_idm_thesis/'
 locale = 'en-us'
-title = "Aiden Boldes' Thesis Process Journal"
+title = "Thesis Process Journal"
 theme = 'rewired'
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+blogPageSize = 5
+author = "Aiden Boldes"
+descriptionLines = [
+    "Integrated Design and Media - New York University" 
+]
+tagline = "A project about pet loss and disenfranchised grief"
+
+[params.toc]
+enabled = true
+ordered = true
+startLevel = 1
+endLevel = 3
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/AidenLionhearted"
+    icon = "fa-brands fa-github"
+
+  [[params.social]]
+    name = "Email"
+    url = "akb10024@nyu.edu"
+    icon = "fa-regular fa-envelope"
+  [[params.subnodes]]
+  name = 'Gwen'
+  url = "https://www.dropbox.com/scl/fi/4t607kg2nmwh8bui9r2bi/thesis_project.html?rlkey=5d3rz5sbhxuhq0o0ownksi8vr&st=drsb8xd5&dl=0"
+  description = "Game created with Twine"
+
+[params.footer]
+text = 'made with ♥ and [Hugo](https://gohugo.io/) // theme [rewired](https://github.com/RigleGit/rewired)'
+prompt = "akb10024@nyu.edu:~$"
+
+[menus]
+  [[menus.main]]
+    name = "home"
+    pageRef = "/"
+    weight = 10
+
+  [[menus.main]]
+    name = "blog"
+    pageRef = "/posts"
+    weight = 20
+
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/AidenLionhearted"
+icon = "fa-brands fa-github"
+
+[[params.social]]
+name = "Email"
+url = "akb10024@nyu.edu"
+icon = "fa-regular fa-envelope"
