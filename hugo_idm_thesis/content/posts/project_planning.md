@@ -37,5 +37,5 @@ toc:
 * [ChatGPT](https://www.chatgpt.com) for organization, clarification of assignment instructions, and feedback 
 
 # People Needed
-* My professor to give assignment instructions, clarifying deliverables, and give feedback
+* My professor to give assignment instructions, clarify deliverables, and give feedback
 * An expert in game design to give feedback on the project (TBD)
