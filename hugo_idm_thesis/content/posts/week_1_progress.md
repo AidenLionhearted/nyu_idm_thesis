@@ -138,3 +138,4 @@ I sent my professor an email this morning asking to clarify some of the schedule
 
 # 9/8/2026
 ## Project Planning Document
+I've gone ahead and filled in the rest of the project planning document as best I could to make sure it will be complete for tomorrow's class.  I'll keep an eye on my email and update if necessary.

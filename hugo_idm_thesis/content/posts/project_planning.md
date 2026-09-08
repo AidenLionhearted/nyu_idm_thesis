@@ -30,12 +30,12 @@ toc:
 | Week 13  | Work on final presentation and deliverables                                                                        | Work on final presentation and deliverables                               |
 | Week 14  | Practice Presentation                                                                                              | Practice Presentation                                                     |
 # Resources Needed
-* GitHub Pages for documenting work via journal entries
-* GitHub repository for storing code in a centralized location
-* Twine desktop application to create the project
-* Twine/Harlowe documentation and guides to help with creating my project
-* ChatGPT for organization, clarification of assignment instructions, and feedback 
+* [GitHub Pages](https://aidenlionhearted.github.io/nyu_idm_thesis/) for documenting work via journal entries
+* [GitHub repository](https://github.com/AidenLionhearted/nyu_idm_thesis) for storing code in a centralized location
+* [Twine desktop application](https://twinery.org/) to create the project
+* [Twine/Harlowe documentation and guides](https://twine2.neocities.org/) to help with creating my project
+* [ChatGPT](https://www.chatgpt.com) for organization, clarification of assignment instructions, and feedback 
 
 # People Needed
 * My professor to give assignment instructions, clarifying deliverables, and give feedback
-* An expert in game design to give feedback on the project
+* An expert in game design to give feedback on the project (TBD)
