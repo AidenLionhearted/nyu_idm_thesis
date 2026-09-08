@@ -132,3 +132,9 @@ I started my project planning document.  I'm putting it on my GitHub pages site 
 ## Project Planning Document
 I sent my professor an email this morning asking to clarify some of the schedule.  Meanwhile, I filled out the sections for resources and people needed.
 
+## Goals for Tomorrow
+* Wait for clarification email
+* Finish the planning document as best as I can
+
+# 9/8/2026
+## Project Planning Document
