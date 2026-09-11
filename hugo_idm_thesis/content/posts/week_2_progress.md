@@ -34,3 +34,22 @@ I was thinking about what my research question would be and how it ties into my 
 * Continue brainstorming
 * Map out story beats
 * Work on research question
+
+# 9/11/2026
+## Story Beats
+
+I started my story beats today.  I didn't get very far because I had a rough time sleeping last night but I'm glad I got some of it done.  It feels like everything is starting to mesh which feels good.
+
+### Story Beats So Far
+* Gwen introduces themself  
+* Talks about how their friend (pet parent) is struggling  
+* Pet parent in work meeting  
+  * Not productive  
+  * Boss calls them out  
+  * Says “Be ready to work tomorrow”  
+* Pet parent ignores phone calls
+
+## Goals for Tomorrow
+* Continue working on story beats
+* Refresh knowledge of creating research questions
+* Start working on research question
