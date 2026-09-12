@@ -14,10 +14,13 @@ toc:
 ---
 
 # 9/10/2026
+
 ## Brainstorming 
+
 Today I started working on brainstorming the narrative and mechanics for the game.  This is a tab in my overall Google Doc for the writing parts of my thesis.
 
 ### Categories I Worked On
+
 * Setting
 * Characters
 * Mechanics
@@ -31,16 +34,19 @@ So, what would the protagonist show before that?  I want the protagonist to repr
 I was thinking about what my research question would be and how it ties into my findings.  My findings from my research project last semester showed that individuals overall are supportive of grieving pet parents.  However, institutions, such as workplaces and schools, were severely lacking.  I can represent the institution findings through scenes with the pet parent.  But I still need a hook to bridge my research findings with my new research question.  I'll work on this tomorrow.
 
 ## Goals for Tomorrow
+
 * Continue brainstorming
 * Map out story beats
 * Work on research question
 
 # 9/11/2026
+
 ## Story Beats
 
 I started my story beats today.  I didn't get very far because I had a rough time sleeping last night but I'm glad I got some of it done.  It feels like everything is starting to mesh which feels good.
 
 ### Story Beats So Far
+
 * Gwen introduces themself  
 * Talks about how their friend (pet parent) is struggling  
 * Pet parent in work meeting  
@@ -50,6 +56,56 @@ I started my story beats today.  I didn't get very far because I had a rough tim
 * Pet parent ignores phone calls
 
 ## Goals for Tomorrow
+
 * Continue working on story beats
 * Refresh knowledge of creating research questions
 * Start working on research question
+
+# 9/12/2026
+
+## Story Beats
+
+I meant to only work on my story beats for maybe a half hour.  I ended up working for an hour and a half and finished them.  I'm very much enjoying the whole process.  Once I get started it's easy to keep going.  I'll probably go over them a few more times before starting to draft the script but I'm considering them completed.
+
+### Story Beats (Potential Final)
+
+* Gwen introduces themself as the pet parent’s best friend
+* Talks about how their friend (pet parent) is struggling
+* Pet parent in work meeting
+  * Not productive
+  * Boss calls them out
+  * Says “Be ready to work tomorrow”
+* Pet parent ignores phone calls
+* When Gwen goes through the apartment things are in disarray
+* Gather objects
+  * Bag of cookies in kitchen
+  * Comb in bathroom
+  * Book from living room
+  * Stuffed toy from bedroom
+* Pet parent doesn’t react to any objects because they aren’t actually there
+* Gwen is sad they can’t help
+* Gwen tries to comfort/hug pet parent
+* Gwen realizes that they aren’t alive anymore
+* Pet parent leaves their bedroom
+* Gwen follows
+* Pet parent picks up pet collar and crumples to the floor sobbing
+* Pet parent says how much they miss Gwen
+* Gwen tries one last thing
+  * Runs out of apartment (works because they are a spirit)
+  * Finds a stray in a nearby park
+  * Stray can sense Gwen and follows them back to apartment
+  * Stray scratches at the door
+* Pet parent opens the door
+
+**The End**
+
+## Research Question
+
+I had to go back to last semester's Miro board and refresh my memory on the difference between a research question and a research statement.  I'm glad it was still there.  I've made a first pass on it and I'll come back to it tomorrow.
+
+> How do I create a narrative game that not only educates others on the effects of grief from losing a pet, but also how others can be supportive towards the bereaved?
+
+## Goals for Tomorrow
+
+* Iterate research question over multiple drafts (5 maximum)
+* Start writing script/passages for story beats 1 and 2
