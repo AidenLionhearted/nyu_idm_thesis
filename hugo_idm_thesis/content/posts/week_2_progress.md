@@ -131,3 +131,31 @@ Today I started iterating on my research question.  I made three more passes fro
 **Pass 4 (Potential Final)**
 
 > How do I create a narrative game that portrays the often disenfranchised grief from losing a pet and demonstrates how the player can be supportive to someone who is grieving?
+
+## Goals for Tomorrow
+
+* Start writing script/passages for story beats 1 and 2
+
+# 9/14/2026
+
+## Script Writing
+
+I started on the script for the first two story beats.  Originally my plan was to have the player supply the name for the protagonist's friend but after consulting with ChatGPT decided that might be too confusing for the player.  They might think that the friend is the protagonist, not Gwen.  So I went with calling the friend "Avery" since it's a popular gender neutral name.
+
+After a first pass on the first story beat I took a step back and realized that I needed to include a content warning for the game.  This will be a passage that is linked on the first passage and is opt-in.  The game can be started from the first passage and the content warning passage.
+
+> << Start Screen >>
+>
+> Hello player,
+> 
+> You are about to experience the story of Gwen and their friend Avery.
+> 
+> If you’d like to see the content warnings for this game, click the link below.  You’ll be able to start the game from this page and the content warning page.
+> 
+> —
+> 
+> << Content Warnings >>
+> 
+> This game includes themes of death, grief, and depression.  There is also a scene involving a callous boss at Avery’s workplace.
+> 
+> —
