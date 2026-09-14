@@ -140,7 +140,7 @@ Today I started iterating on my research question.  I made three more passes fro
 
 ## Script Writing
 
-I started on the script for the first two story beats.  Originally my plan was to have the player supply the name for the protagonist's friend but after consulting with ChatGPT decided that might be too confusing for the player.  They might think that the friend is the protagonist, not Gwen.  So I went with calling the friend "Avery" since it's a popular gender neutral name.
+I started on the script for the first two story beats.  Originally my plan was to have the player supply the name for the protagonist's friend but after feedback from ChatGPT I decided that might be too confusing for the player.  They might think that the friend is the protagonist, not Gwen.  So I rewrote that part of the script, switching `<player name>` with "Avery".  I chose the name because it's gender neutral.  Even though the protagonist isn't Avery, I thought using a neutral name would make that character more relatable.
 
 After a first pass on the first story beat I took a step back and realized that I needed to include a content warning for the game.  This will be a passage that is linked on the first passage and is opt-in.  The game can be started from the first passage and the content warning passage.
 
