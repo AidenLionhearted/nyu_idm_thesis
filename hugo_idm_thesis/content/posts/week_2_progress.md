@@ -109,3 +109,25 @@ I had to go back to last semester's Miro board and refresh my memory on the diff
 
 * Iterate research question over multiple drafts (5 maximum)
 * Start writing script/passages for story beats 1 and 2
+
+# 9/13/2026
+
+## Research Question
+
+Today I started iterating on my research question.  I made three more passes from yesterday's attempt.  I changed the goal of "educating" to "portraying" since education could be a big lift.  I also made the question more specific.
+
+**Pass 1 (From Yesterday)**
+
+> How do I create a narrative game that not only educates others on the effects of grief from losing a pet, but also how others can be supportive towards the bereaved?
+
+**Pass 2**
+
+> How do I create a narrative game that portrays the impact of pet loss on the bereaved and demonstrates how one can be supportive to someone who is grieving?
+
+**Pass 3**
+
+> How do I create a narrative game that portrays the often disenfranchised impact of pet loss on the bereaved and demonstrates how the player can be supportive to someone who is grieving?
+
+**Pass 4 (Potential Final)**
+
+> How do I create a narrative game that portrays the often disenfranchised grief from losing a pet and demonstrates how the player can be supportive to someone who is grieving?
