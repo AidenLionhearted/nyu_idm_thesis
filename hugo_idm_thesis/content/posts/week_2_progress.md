@@ -164,3 +164,18 @@ After a first pass on the first story beat I took a step back and realized that 
 
 * Finish story beats 1 and 2.
 * Start story beats 3 and 4.
+
+# 9/15/26
+
+## Script Writing
+
+I continued my script writing where I left off yesterday.  I ended up rewriting one of the paragraphs from beat 2 because some of the plot point was conflicting with a different one.  Definitely worth going back and editing since the new paragraph was more gripping and illuminating than the previous version.
+
+I also wrote beats 3 and 4.  They're rather short and I'm concerned that the player will be able to click through in a minute and my game will be way too short.  But at this point I don't want to pad it for the sake of length.  I don't believe the game itself has a minimum word count.  It takes as long as it takes to tell the story.  Still, it's a worry of mine.
+
+As for tomorrow, I'm not sure if I necessarily want to keep numbering the story beats.  Especially because they're starting to flow together naturally and somewhat out of order.  But I do want to give myself measurable goals.  Maybe just saying "3-4 beats" is enough.  That way they can potentially go out of order and I won't get hung up on the list.  I'll see how it goes tomorrow.
+
+## Goals for Tomorrow
+
+* Write 2-4 beats.
+* One-on-one with my professor
