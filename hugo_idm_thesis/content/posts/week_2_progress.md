@@ -159,3 +159,8 @@ After a first pass on the first story beat I took a step back and realized that 
 > This game includes themes of death, grief, and depression.  There is also a scene involving a callous boss at Avery’s workplace.
 > 
 > —
+
+## Goals for Tomorrow
+
+* Finish story beats 1 and 2.
+* Start story beats 3 and 4.
