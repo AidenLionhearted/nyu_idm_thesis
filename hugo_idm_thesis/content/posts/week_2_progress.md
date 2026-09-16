@@ -179,3 +179,15 @@ As for tomorrow, I'm not sure if I necessarily want to keep numbering the story 
 
 * Write 2-4 beats.
 * One-on-one with my professor
+
+# 9/16/26
+
+## Taking a Break
+
+I'm taking a break today since I do have my one-on-one with my professor.  I haven't had any days off in terms of working on this project.  No need to burn myself out.  I will add notes here or in next week's journal if something changes or I need to document anything related to my one-on-one.
+
+## Goals for Tomorrow
+
+* Go over information from tonight's one-on-one
+* If I receive a rubric or other guidance for the paper update the project planner as needed
+* Write 2-4 beats for the script
