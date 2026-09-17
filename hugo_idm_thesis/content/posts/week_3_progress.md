@@ -1,7 +1,7 @@
 ---
-title: "Week_3_progress"
-date: 2026-09-16T09:04:34-04:00
-draft: true
+title: "Week 3 Progress"
+date: 2026-09-17T15:06:50-04:00
+draft: false 
 description: ""
 tags: []
 categories: []
@@ -12,3 +12,35 @@ toc:
   startLevel: 1
   endLevel: 3
 ---
+
+# 9/17/26
+
+## Revised Schedule
+
+I worked with ChatGPT today to synthesize the notes from my one-on-one, the rubric sent out this morning, and the original class schedule to make a new planning document.  This was absolutely necessary because my original one did not have all the information to make it accurate.  I did coach ChatGPT to fix errors, rewrite confusing parts, and use the columns that I wanted to create a table.  I have stored this table inside my thesis Google Doc with a ChatGPT acknowledgement in bold at the top.
+
+I'm so happy to have this because it makes the workload less intimidating and easy to chunk across the week itself.
+
+This is the schedule for this week specifically.
+
+| Date         | Focus                       | Plan                                                                                                                                                                                                                                            |
+| ------------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Thu 9/17** | 📚 Research                 | Continue the interactive-narrative article you're already working through. Take useful notes, especially anything relevant to interaction/choice/narrative design. If energy permits, identify the next source to read.                         |
+| **Fri 9/18** | 🎮 Prototype                | Work in Twine. Continue the script/current passages and choose **one useful thing to experiment with** for next week's prototype. The goal is something you can show, not a polished chunk of the final game.                                   |
+| **Sat 9/19** | 📝 Outline + light research | Create the annotated-outline document and put in all required paper headings. Start rough notes/descriptions under the sections you already understand. Look through your old independent-study readings and flag potentially relevant sources. |
+| **Sun 9/20** | **Buffer / off**            | No required thesis work. If something slipped earlier, this is available as a catch-up day—but I would rather preserve it as breathing room.                                                                                                    |
+| **Mon 9/21** | 🎮 Prototype                | Main prototype work session. Get whatever you're showing Wednesday into demonstrable shape. Test it yourself and make notes about what worked, what didn't, and what questions you want feedback on.                                            |
+| **Tue 9/22** | 📚 + 🎮 Wrap-up             | Process another research source if feasible. Do a **final prototype check**, make sure your Twine build/link works, and prepare a few points about what you experimented with and what feedback you want. No major new features Tuesday night.  |
+| **Wed 9/23** | 🎓 Class                    | **Show prototype.** Get feedback. After class, Week 4 begins and we switch to the next row of your project plan.                                                                                                                                |
+## Literature Research
+
+This journal is explicitly for the progress of the game development itself.  I will not be discussing any of the literature that I am reading here unless it impacts design/development choices.
+
+## Future of this Journal
+
+I might not be posting in here every day.  Some days might be dedicated solely to paper related work and on those days I won't make an entry.
+
+## Goals for Tomorrow
+
+* Continue the script for the game
+* Start porting the passages into Twine 
