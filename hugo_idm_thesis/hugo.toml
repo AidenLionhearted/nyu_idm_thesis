@@ -54,3 +54,7 @@ prompt = "akb10024@nyu.edu:~$"
     name = "blog"
     pageRef = "/posts"
     weight = 20
+  [[menus.main]]
+    name = "projects"
+    pageRef = "/projects"
+    weight = 20

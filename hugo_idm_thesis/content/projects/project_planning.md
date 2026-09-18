@@ -1,8 +1,10 @@
 ---
-title: "Project Planning"
+title: "Project Planning Sheet"
 date: 2026-09-03T21:39:20-04:00
-draft: false
-description: ""
+description: "Weekly Schedule for Thesis Work"
+icon: "fa-solid fa-calendar-days"
+accent: "purple"
+status: "completed"
 tags: []
 categories: []
 
@@ -12,7 +14,6 @@ toc:
   startLevel: 1
   endLevel: 3
 ---
-# Weekly Plan
 | Week   | Date      | Due / In Class                                                  | Game / Project                                                                                                                  | Paper / Research                                                                                                                               |
 | ------ | --------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1**  | **9/2**   | 5-min project presentation                                      | Establish game concept, scope, tools, and resource needs.                                                                       | Establish research question and thesis direction.                                                                                              |
