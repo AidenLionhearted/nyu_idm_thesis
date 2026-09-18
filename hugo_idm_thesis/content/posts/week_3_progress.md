@@ -44,3 +44,47 @@ I might not be posting in here every day.  Some days might be dedicated solely t
 
 * Continue the script for the game
 * Start porting the passages into Twine 
+
+# 9/18/26
+
+## Porting to Twine
+
+I put all my existing script into Twine.  I'm naming the passages using hyphens instead of underscores because Twine considers underscores code related.
+
+The title screen and the content warning passages both point to `intro-gwen-1` which is the first passage of the game.  Each paragraph of the script was given its own passage.  Each passage points to the next one.
+
+### Current State of my Twine Map
+
+![The Twine Passage Map](twine_build.png)
+
+### Title Screen Passage Edit Window
+
+![Title Page Passage Editing Box](passage_box.png)
+
+## Testing CSS Code
+
+Harlowe has a whole library of macros.  These are like functions you can use in your passages to do all sort of things.  It can set variables, add style to different elements, and do things like save and load your game state.
+
+I tried using an enchantment.  Enchantments are a type of changer that applies style to various elements of a passage.  See documentation [here](https://twine2.neocities.org/#macro_enchant).
+
+I put a border around the passage but there was no way to give it padding so it touched all the text.
+
+![Tight Border around Passage](tight_border.png)
+
+After some Google searching I found that the Twine application has a window for global stylesheet overrides.  I was able to add padding to the passage element and a border!
+
+### CSS Code
+
+```
+tw-passage {
+  border-style: groove;
+  padding: 50px
+}
+```
+
+![Passage with Padded Border](padded_border.png)
+
+## Goals for Next Development Day
+
+* Further explore CSS elements
+* Write 2 - 4 story beats and add them into Twine
