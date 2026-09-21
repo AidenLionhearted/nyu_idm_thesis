@@ -137,3 +137,45 @@ tw-include[type="footer"] {
   font-size: 0.8em
 }
 ```
+
+## Inventory System
+
+I moved on to working on the actual code for the inventory system.  I created a new passage called `starting-variables` and initialized an empty array (`inventoryArray`) to use for items the player collects.  This passage has the special tag `startup` which tells Twine to only use this passage once when the game starts.
+
+This is the starting-variables passage
+
+```
+(set: $inventoryArray to (array:))
+```
+
+Next I needed to actually build the inventory system.  This code went into the footer passage mentioned above.
+
+The code checks to see if the inventory array is empty.  If it is, it displays the text "Empty".  This is so there isn't a random empty space after the "Inventory:" text.
+
+If the array isn't empty, it loops through each item in the array and prints each item separated by a line break.  The exception is if the item is the last in the array.  Then it ommits the line break so that it doesn't create an empty line at the end.
+
+This is the inventory passage (footer):
+
+```
+Inventory:
+(if: $inventoryArray is an empty)[Empty]
+\(else: ) + (for: each _item, ...$inventoryArray)[_item(unless: _item is $inventoryArray's last)[<br>]]
+```
+
+To actually add items to the array, you combine the current array and the new item within the individual passage where the player gets the item.
+
+```
+(set: $inventoryArray to it + (a: "Bag"))
+```
+
+Right now I am adding random items within the introduction passages.  This is only for testing.  The actual game will add items as the player explores the apartment.
+
+![Empty Inventory](empty_inventory.png)
+
+![Inventory with One Item](one_item_inventory.png)
+
+![Inventory with Two Items](two_item_inventory.png)
+
+## Goals for Next Development Day
+
+* Write 2 - 4 story beats and add them into Twine
