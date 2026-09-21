@@ -112,10 +112,10 @@
 				<time datetime="2026-09-17T15:06:50-04:00">2026-09-17</time>
 
 				<span aria-hidden="true">//</span>
-				<span>679 words</span>
+				<span>993 words</span>
 
 				<span aria-hidden="true">//</span>
-				<span>4 min</span>
+				<span>5 min</span>
 			</div>
 		
 
@@ -183,18 +183,18 @@
     </li>
     <li><a href="#91826">9/18/26</a>
       <ul>
-        <li><a href="#porting-to-twine">Porting to Twine</a>
-          <ul>
-            <li><a href="#current-state-of-my-twine-map">Current State of my Twine Map</a></li>
-            <li><a href="#title-screen-passage-edit-window">Title Screen Passage Edit Window</a></li>
-          </ul>
-        </li>
+        <li><a href="#porting-to-twine">Porting to Twine</a></li>
         <li><a href="#testing-css-code">Testing CSS Code</a>
           <ul>
             <li><a href="#css-code">CSS Code</a></li>
           </ul>
         </li>
         <li><a href="#goals-for-next-development-day">Goals for Next Development Day</a></li>
+      </ul>
+    </li>
+    <li><a href="#92126">9/21/26</a>
+      <ul>
+        <li><a href="#harlowe-and-css-experimentation">Harlowe and CSS Experimentation</a></li>
       </ul>
     </li>
   </ul>
@@ -267,7 +267,6 @@
 <h2 id="porting-to-twine">Porting to Twine</h2>
 <p>I put all my existing script into Twine.  I&rsquo;m naming the passages using hyphens instead of underscores because Twine considers underscores code related.</p>
 <p>The title screen and the content warning passages both point to <code>intro-gwen-1</code> which is the first passage of the game.  Each paragraph of the script was given its own passage.  Each passage points to the next one.</p>
-<h3 id="current-state-of-my-twine-map">Current State of my Twine Map</h3>
 <p><figure class="content-figure">
 	<img
 		src="twine_build.png"
@@ -284,7 +283,6 @@
 		</figcaption>
 	
 </figure></p>
-<h3 id="title-screen-passage-edit-window">Title Screen Passage Edit Window</h3>
 <p><figure class="content-figure">
 	<img
 		src="passage_box.png"
@@ -325,7 +323,7 @@
 <h3 id="css-code">CSS Code</h3>
 <pre tabindex="0"><code>tw-passage {
   border-style: groove;
-  padding: 50px
+  padding: 10px
 }
 </code></pre><p><figure class="content-figure">
 	<img
@@ -348,7 +346,119 @@
 <li>Further explore CSS elements</li>
 <li>Write 2 - 4 story beats and add them into Twine</li>
 </ul>
+<h1 id="92126">9/21/26</h1>
+<h2 id="harlowe-and-css-experimentation">Harlowe and CSS Experimentation</h2>
+<p>I wanted to start working on the inventory element so that I had something extra to show in class on Wednesday.  I learned about the special header and footer tags.  This allows you to create a special passage with one of those tags and it will apply to every passage in the game without having to go in every passage and add the code.  Very useful.</p>
+<p>I used this video on YouTube to learn about how to code this in Twine: <a href="https://www.youtube.com/watch?v=jIhBon_8aM8">Video Link</a></p>
+<p>Once I had the special passage set up I ran into an issue where the footer was showing right up against the links at the bottom of the passage.</p>
+<p><figure class="content-figure">
+	<img
+		src="stuck_footer.png"
+		alt="Footer Appearing Stuck Next to Links"
+		
+		loading="lazy"
+	>
 
+	
+		<figcaption>
+			
+				Footer Appearing Stuck Next to Links
+			
+		</figcaption>
+	
+</figure></p>
+<p>So I did some digging and found out that you can use CSS for the footer by adding the <code>tw-include[type=&quot;footer&quot;]</code> class.  This required multiple iterations of adding new elements to make things look the way I wanted them.</p>
+<table>
+	<thead>
+			<tr>
+					<th>CSS Code</th>
+					<th>Explanation</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>display: block</td>
+					<td>Adds line break and takes full width of parent</td>
+			</tr>
+			<tr>
+					<td>margin-top: 20px</td>
+					<td>Adds spacing from the top of the class</td>
+			</tr>
+			<tr>
+					<td>margin-left: -10px</td>
+					<td>Subtracts 10px to override the parent&rsquo;s padding</td>
+			</tr>
+			<tr>
+					<td>margin-right: -10px</td>
+					<td>Subtracts 10px to override the parent&rsquo;s padding</td>
+			</tr>
+			<tr>
+					<td>padding: 10px</td>
+					<td>Adds padding inside the footer class</td>
+			</tr>
+			<tr>
+					<td>border-style: groove none none none</td>
+					<td>Adds a border to the top only</td>
+			</tr>
+			<tr>
+					<td>font-size: 0.8em</td>
+					<td>Makes the font smaller while being able to be scaled by browser settings</td>
+			</tr>
+	</tbody>
+</table>
+<p><figure class="content-figure">
+	<img
+		src="new_footer.png"
+		alt="Newly Styled Footer"
+		
+		loading="lazy"
+	>
+
+	
+		<figcaption>
+			
+				Newly Styled Footer
+			
+		</figcaption>
+	
+</figure></p>
+<p>I also added another class to the CSS stylesheet so that the footer doesn&rsquo;t appear in passages that I tagged <code>no-footer</code>.  So far, those passages are the title screen and the content warnings screen.</p>
+<p><figure class="content-figure">
+	<img
+		src="tags.png"
+		alt="The Tags Menu on the Title Screen Passage"
+		
+		loading="lazy"
+	>
+
+	
+		<figcaption>
+			
+				The Tags Menu on the Title Screen Passage
+			
+		</figcaption>
+	
+</figure></p>
+<p>This is the current version of the CSS stylesheet.</p>
+<pre tabindex="0"><code>tw-passage {
+  border-style: groove;
+  padding: 10px
+}
+
+tw-passage[tags~=&#34;no-footer&#34;] tw-include[type=&#34;footer&#34;] {
+  display: none
+}
+
+tw-include[type=&#34;footer&#34;] {
+  display: block;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
+  border-style: groove none none none;
+  font-size: 0.8em
+}
+</code></pre>
 	</div>
 
 	<footer class="page__footer">

@@ -53,11 +53,7 @@ I put all my existing script into Twine.  I'm naming the passages using hyphens 
 
 The title screen and the content warning passages both point to `intro-gwen-1` which is the first passage of the game.  Each paragraph of the script was given its own passage.  Each passage points to the next one.
 
-### Current State of my Twine Map
-
 ![The Twine Passage Map](twine_build.png)
-
-### Title Screen Passage Edit Window
 
 ![Title Page Passage Editing Box](passage_box.png)
 
@@ -78,7 +74,7 @@ After some Google searching I found that the Twine application has a window for 
 ```
 tw-passage {
   border-style: groove;
-  padding: 50px
+  padding: 10px
 }
 ```
 
@@ -88,3 +84,56 @@ tw-passage {
 
 * Further explore CSS elements
 * Write 2 - 4 story beats and add them into Twine
+
+# 9/21/26
+
+## Harlowe and CSS Experimentation
+
+I wanted to start working on the inventory element so that I had something extra to show in class on Wednesday.  I learned about the special header and footer tags.  This allows you to create a special passage with one of those tags and it will apply to every passage in the game without having to go in every passage and add the code.  Very useful.
+
+I used this video on YouTube to learn about how to code this in Twine: [Video Link](https://www.youtube.com/watch?v=jIhBon_8aM8)
+
+Once I had the special passage set up I ran into an issue where the footer was showing right up against the links at the bottom of the passage.
+
+![Footer Appearing Stuck Next to Links](stuck_footer.png)
+
+So I did some digging and found out that you can use CSS for the footer by adding the `tw-include[type="footer"]` class.  This required multiple iterations of adding new elements to make things look the way I wanted them.
+
+| CSS Code                            | Explanation                                                              |
+|-------------------------------------|--------------------------------------------------------------------------|
+| display: block                      | Adds line break and takes full width of parent                           |
+| margin-top: 20px                    | Adds spacing from the top of the class                                   |
+| margin-left: -10px                  | Subtracts 10px to override the parent's padding                          |
+| margin-right: -10px                 | Subtracts 10px to override the parent's padding                          |
+| padding: 10px                       | Adds padding inside the footer class                                     |
+| border-style: groove none none none | Adds a border to the top only                                            |
+| font-size: 0.8em                    | Makes the font smaller while being able to be scaled by browser settings |
+
+![Newly Styled Footer](new_footer.png)
+
+I also added another class to the CSS stylesheet so that the footer doesn't appear in passages that I tagged `no-footer`.  So far, those passages are the title screen and the content warnings screen.
+
+![The Tags Menu on the Title Screen Passage](tags.png)
+
+This is the current version of the CSS stylesheet.
+
+```
+tw-passage {
+  border-style: groove;
+  padding: 10px
+}
+
+tw-passage[tags~="no-footer"] tw-include[type="footer"] {
+  display: none
+}
+
+tw-include[type="footer"] {
+  display: block;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
+  border-style: groove none none none;
+  font-size: 0.8em
+}
+```
