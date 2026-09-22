@@ -1,3 +1,7 @@
 hugo_idm_thesis/.hugo_build.lock
-hugo_idm_thesis/public*
+hugo_idm_thesis/public/*
+!hugo_idm_thesis/public/posts/
+hugo_idm_thesis/public/posts/*
+!hugo_idm_thesis/public/posts/*/
+hugo_idm_thesis/public/posts/*/*
 !hugo_idm_thesis/public/posts/*/*.png
