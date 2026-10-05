@@ -48,3 +48,27 @@ toc:
 * Navigation
   * Links to locations update to say if the player has already been there
   * Location description changes after location visit 
+
+# 10/3/26
+
+## Creating Links to Pick Up Items
+
+I found the `link:` macro in Harlowe today.  It creates text that looks the same as what is used to navigate between passages.  You can use these to change text, set variables, and navigate.  There are also link-based macros that can combine two macros in one.  There is a similar macro called `click:` that makes it easier to separate prose and code for a cleaner backend.
+
+See [this documentation](https://twine2.neocities.org/#macro_click) for more information.
+
+This test has a passage that details a living room with a remote control on a table.  The code checks for a variable called `$hasControl` which initializes as `false` at the beginning of the game.  If the variable is set to `false` it shows a link to "Pick up the remote control".  If it's `true` the passage will say, "There's nothing to pick up here" to keep the player from trying to pick it up twice.
+
+When the player clicks on the link it will add another item (the remote control) to the inventory array.  This is a step further from the last tech demo where I had the game append items to the array on its own through code.
+
+The current tricky part is that I have to learn how to dynamically update the inventory in the footer.  When then players picks up an item, the inventory should display it.  I'm looking at the `re-run` macro and `replace` macro to try and get this to work.
+
+![Living Room Code - Pass 1](living_room_code_1.png)
+
+![Inventory Code - Pass 1](inventory_code_1.png)
+
+Currently this isn't working as it should.  But I was able to verify that `$hasControl` was set to `true` and the item was appended to the array when the link was clicked.
+
+![Debug Window Before Clicking](click_debug_before_1.png)
+
+![Debug Window After Clicking](click_debug_after_1.png)
