@@ -72,3 +72,34 @@ Currently this isn't working as it should.  But I was able to verify that `$hasC
 ![Debug Window Before Clicking](click_debug_before_1.png)
 
 ![Debug Window After Clicking](click_debug_after_1.png)
+
+# 10/5/26
+
+## Further Debugging the Inventory System
+
+I went around in circles for a bit today.  I was trying combinations of `list` type macros and the `replace` macro.  I moved from using `list-rerun` to plain `list` because I didn't want to be able to click the pick up link more than once.  I also decided against `re-run` for a similar reason.
+
+Even then, it was hard to wrap my head around what to do.  The more I work with Harlowe's documentation, the more confused I get. After hours of trial and error I ended up searching for how to use `replace`.  [This page](https://twinery.org/archive/questions/52661/how-to-update-variable-located-in-header-or-footer.html) was the most helpful.
+
+The current version of the inventory footer code has a hook attached to it which lets the `replace` macro access it.
+See documentation on hooks [here](https://twine2.neocities.org/#markup_named-hook).
+
+The current version of the living room passage has been updated to use `link` and `replace`.  When you click the link it disappears, adds the item to the array, sets the `$hasControl` variable to true, and calls on the inventory hook to replace itself with the new array.
+
+I also copy/pasted the living room code into another passage called `bedroom` because I wanted to see if the inventory would persist between passages.  At first it didn't and kept showing a value of 0.  But after working on the inventory footer code and changing global variables to temporary ones, that worked.  Honestly at this point I'm not entirely sure how it worked but that can come later.
+
+![Living Room Code - Pass 2](living_room_code_2.png)
+
+![Inventory Code - Pass 2](inventory_code_2.png)
+
+There is weird whitespace going on when the links are clicked.  Also, on the second passage when I add the item, it appears after a comma instead of on a new line.   I'm going to look into it more tomorrow after I've had a break.
+
+![Living Room Before Clicking Link](living_room_before_click.png)
+
+![Living Room After Clicking Link](living_room_after_click.png)
+
+![Bedroom Before Clicking Link](bedroom_before_click.png)
+
+![Bedroom After Clicking Link](bedroom_after_click.png)
+
+![Debug Window After Clicking Link in Bedroom](click_debug_after_2.png)

@@ -35,18 +35,32 @@ If you’d like to see the content warnings for this game, click the link below.
 [[View Content Warnings-&gt;content-warnings]] 
 [[Play-&gt;intro-gwen-1]]</tw-passagedata><tw-passagedata pid="2" name="content-warnings" tags="no-footer" position="725,475" size="100,100">This game includes themes of death, grief, and depression.  There is also a scene involving a callous boss at Avery’s workplace.
 [[Play-&gt;intro-gwen-1]] </tw-passagedata><tw-passagedata pid="3" name="inventory" tags="footer" position="1000,700" size="100,100">Inventory:
+|inventory&gt;[
 (if: $inventoryArray is an empty)[Empty]
-\(else: ) + (for: each $item, ...$inventoryArray)[$item(unless: $item is $inventoryArray&#39;s last)[&lt;br&gt;]]&lt;inventory|
-</tw-passagedata><tw-passagedata pid="4" name="starting-variables" tags="startup" position="1000,500" size="100,100">(set: $inventoryArray to (array:))
-(set: $hasControl to false)</tw-passagedata><tw-passagedata pid="5" name="living-room" tags="" position="850,450" size="100,100">There&#39;s a nice loveseat couch against one of the walls.  Across from the couch is a flat screen TV mounted to the wall.  The room is well decorated with cabinets of anime figures and collectable toys.  A remote control lays on a side table by the couch.
+\(else:) +  (for: each _item, ...$inventoryArray)[_item(unless: _item is $inventoryArray&#39;s last)[&lt;br&gt;]]
+]</tw-passagedata><tw-passagedata pid="4" name="starting-variables" tags="startup" position="1000,500" size="100,100">(set: $inventoryArray to (array:))
+(set: $hasControl to false)
+(set: $hasBrush to false)</tw-passagedata><tw-passagedata pid="5" name="living-room" tags="" position="850,450" size="100,100">There&#39;s a nice loveseat couch against one of the walls.  Across from the couch is a flat screen TV mounted to the wall.  The room is well decorated with cabinets of anime figures and collectable toys.  A remote control lays on a side table by the couch.
 
 (if: $hasControl)[
 	There&#39;s nothing to pick up here.
 ]
 (else:) [
-	(link-rerun: &quot;Pick up the remote control&quot;)[
+	(link: &quot;Pick up the remote control&quot;)[
     	(set: $inventoryArray to it + (a: &quot;Remote Control&quot;), $hasControl to true)
-        (rerun: ?inventory)]
+        (replace: ?inventory)[$inventoryArray]
+        ]
+]
+[[bedroom]]</tw-passagedata><tw-passagedata pid="6" name="bedroom" tags="" position="800,800" size="100,100">Testing testing
+
+(if: $hasBrush)[
+	There&#39;s nothing to pick up here.
+]
+(else:) [
+	(link: &quot;Pick up the brush&quot;)[
+    	(set: $inventoryArray to it + (a: &quot;Brush&quot;), $hasBrush to true)
+        (replace: ?inventory)[$inventoryArray]
+        ]
 ]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
