@@ -103,3 +103,51 @@ There is weird whitespace going on when the links are clicked.  Also, on the sec
 ![Bedroom After Clicking Link](bedroom_after_click.png)
 
 ![Debug Window After Clicking Link in Bedroom](click_debug_after_2.png)
+
+# 10/6/26
+
+## Fixed Up the Inventory System and Started Navigation
+
+Sleep does wonders.  I jumped back into Twine to clean up and figure out the rest of the code needed for the inventory to work properly and integrate it into the navigation between rooms.
+
+### Started on Navigation
+
+I added some simple links to go from the title screen and content warnings passages to go to the `living-room` passage.  I added a link from the `bedroom` passage to go back to the `living-room` passage.  I also gave the links between those two passages some flavor text instead of them just saying the name of the room.
+
+### If/Else Statements Now Include Room Description Prose
+
+Yesterday the room descriptions were static even when moving between rooms.  I wanted the description to change based on if you had collected the item or not.  That way it'll be clearer what you can do in the room. 
+
+![Passage Code Now Showing Navigation Flavor Text and the New If/Else structure](new_passage_code_pass_1.png)
+
+### Handling Whitespace
+
+Even with the updated if/else statements I was still experiencing seemingly random whitespace.  And I was hitting my head against the wall trying to figure out where it came from.
+
+I looked in the [Harlowe documentation on whitespace](https://twine2.neocities.org/#markup_whitespace) and saw that you can use curly braces to remove whitespace so that you can keep your code clean.  You do have to use `<br>` tags to create new lines.  I played with this for awhile but I was still seeing the whitespace.  Then I found the "Debug View" button on the debugger window.  It gives you an interface so you can see what macros are running where.  What passages are being run.  This gave me a huge clue.
+
+I saw that at the top it mentioned the startup variables code that initializes every time the game starts but then doesn't run again.  I navigates to another passage and then back and it was gone.  And other macros seemed to have their own lines.
+
+![Debug View](debug_view.png)
+
+I realized that even though you can't see the code when you run the game, it's still taking up space and therefore creating whitespace.  That's also why the whitespace appeared differently after navigating.  The starting variables passage wasn't running anymore.
+
+I found a Twine discussion where someone else was having the same problem.  The Harlowe documentation is confusing and says to use it for text.  What the poster in the discussion and I didn't know is that you can put curly braces that includes code too and collapses that whitespace as well.
+
+I went into all my passages and added the curly braces, cleaned up code indents, and added `<br>` tags where needed.  Now everything looks pretty.
+
+![Starting Variables Code](starting_variables_clean.png)
+![Inventory Code](inventory_clean.png)
+![Bedroom Code](bedroom_clean.png)
+
+![Bedroom Rendered Properly](bedroom_game_clean.png)
+
+### Inventory Isn't Actually Reloading
+
+I was so wrapped up in the whitespace problem that I didn't realize that when picking up the first object, moving to another location, and picking up an item would display the array with commas.
+
+![Array Being Displayed Instead of Proper Inventory](array_mistake.png)
+
+I ended up using `rerun` instead of `replace` so that it will load the inventory hook again instead of replacing the hook with the plain array value.
+
+![Proper Display of Inventory](array_fixed.png)
