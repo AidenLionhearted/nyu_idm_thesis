@@ -151,3 +151,17 @@ I was so wrapped up in the whitespace problem that I didn't realize that when pi
 I ended up using `rerun` instead of `replace` so that it will load the inventory hook again instead of replacing the hook with the plain array value.
 
 ![Proper Display of Inventory](array_fixed.png)
+
+# Class Specific Journal Entry
+
+> Write about your production process. What does it mean to move from a wireframe to an actual website; from a tech demo to an installation space; from A/B testing to a polished mockup? Be explicit about your challenges and how you plan to show your work.
+
+My production process is a lot like my process at work.  I try one thing at a time.  This is because if you do too much at once  you won't be able to identify which part you implemented is causing a problem.  I also make detailed documentation so I can track what I've done, how I did it, and what my blockers or difficulties I faced.
+
+For tech demos I try to be as clean as possible.  I don't want my audience to sit there reading text instead of paying attention to what the demo is actually doing.  It also helps because my audience will be able to give constructive feedback.  I do my best to take notes on the feedback.  Moving on from the tech demo means integrating my work into the actual project and making fixes based on the feedback.  I also document why I'm following each particular piece of advice and how I've implemented it. 
+
+One of my biggest challenges has been working with Harlowe's documentation.  While the page is very detailed, the explanations can be difficult to understand.  Also, I've noticed that not all explanations are paired with an example.  So I've needed to look up community-based discussions to better understand the macros and syntax.
+
+Another challenge has been working in a vacuum.  Unlike at work, I don't have anyone to peer review my code.  So I'm getting a lot of work done but no way of knowing if my code is efficient or written properly.  It's also harder to see where the boundary is between plagiarizing someone's example of code implementation and learning how to use the code from their example.
+
+How I plan to show my work goes back to my detailed documentation.  That documentation includes code snippets, screenshots of the game, and all the iterations I've done.  So when I go to write my methods I can rely heavily on that documentation. 
