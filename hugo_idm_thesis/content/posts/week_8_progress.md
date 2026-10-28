@@ -51,3 +51,18 @@ Then there's the aspect that Professor Ansari asked about during my midterm pres
 I do plan on making a tracker variable that stores how many times Gwen has tried to interact with Avery and depending on that variable the prose when going to the bedroom is different.  With each attempt to get to Avery, the more Gwen starts realizing something is wrong with her.  This will have a scope too.  This variable won't change the text in the other locations.  While I could do that, it'll take substantially more time that I don't really have at this point in the semester.  So the only prose that changes is the bedroom.  After getting the last object, the door to the bedroom will open, Gwen will finally go inside, and she will see Avery crying while holding Gwen's collar.  That's the reveal.
 
 So this week has been script heavy and I intend to post more this week depending on how that process goes.
+
+# 10/28/26
+
+## Continuing Script Writing
+
+I just wanted to give a small update.  I am finished writing the introduction, living room, kitchen, and bathroom scenes.  I'm currently working on the bedroom scenes.
+
+There are four bedroom sections:
+
+* Initial: Gwen decides to give Avery space and then goes to find objects.  
+* First item: Gwen can't reach Avery but assumes that Avery will respond later when they stop crying.
+* Second item: Gwen is getting increasingly disturbed by the lack of communication.
+* Final: The door to the bedroom is open and the player reaches the climax.
+
+Another thing I finally decided on was the "supernatural rules".  I'm not going to use them at all.  Because at no point in the narrative will the player see Avery leave the room.  Because of that, there's nothing to prove or disprove around object movement.  The player can come up with their own interpretation.
