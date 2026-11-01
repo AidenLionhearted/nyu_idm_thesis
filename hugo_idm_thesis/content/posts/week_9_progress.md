@@ -25,6 +25,30 @@ toc:
 | Tue 11/3 | Incorporate survey feedback; send invitations if cleared. | Add explanations for 2 existing sources. | Short session; note testing setup. |
 | Wed 11/4 | Begin playtesting if cleared; check links. | Add final source explanation; select source 19. | Rest / buffer. |
 
+# 10/30/26
+
+## Creating Playtesting Survey
+
+I created my playtesting survey.  It’s actually more comprehensive than I thought it would be.  The arrangement of the questions made sense.  I also discovered that you can make sections.  Somehow I didn’t see that when I created my research survey last semester.
+
+I think one of the best things is that I did a bit of branching.  The very first question is in its own section and asks the participant if they’ve played the game.
+
+If they answer “Yes”, they’re taken to the complete survey.
+
+If they answer “No”, they’re taken to another section that thanks them for their participation but says they can’t complete the survey if they’ve never played the game.
+
+If they answer “Yes, but I didn’t finish”, it takes them to a different section that asks why they didn’t finish the game.  There are multiple checkboxes they can select along with an “Other” box.
+
+Another branching point is a question that asks the participant how long they have been playing video games.
+
+If they answer any of the time ranges they move onto the next section that asks questions to build a gamer profile.
+
+If they answer “This is my first game” they skip the profile section since they wouldn’t be able to answer those questions.  It could cause enough friction where they don’t want to complete the rest of the survey.
+
+After that I have sections on UX/Usability, story and narrative, and a closing section where participants answer if they’d recommend the game.  There is also a space to write additional feedback.
+
+It took a bit of work but I think it strikes a good balance of types of questions.  Hopefully it doesn’t take too long to answer and people won’t quit early.
+
 # 11/1/26
 
 ## Script Writing
