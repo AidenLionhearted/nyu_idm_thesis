@@ -62,3 +62,5 @@ And I think that's an important message to send to someone who is moving through
 ## Importing into Twine
 
 I started importing the script into Twine.  I learned a few things while I was working on the importing.  You can use the toolbar in the passage windows to change text color.  It writes the hook for you.  In fact, there's a whole menu to set up different macros and coding without having to write the code.  And I feel silly and like I wasted a lot of time struggling with Harlowe and Twine in past weeks.  But I suppose knowing how to code makes things easier when you need to troubleshoot.
+
+If you get annoyed by line wrap in the passage editor, use the escape character "\" at the end of the line and press enter, the next word will automatically indent to match the first line.  I feel so much better now.
