@@ -115,26 +115,62 @@ If you’d like to see the content warnings for this game, click the link below.
 		[[Search the kitchen-&gt;kitchen]]
 	]
 }</tw-passagedata><tw-passagedata pid="14" name="bedroom" tags="" position="900,1200" size="100,100">{
-	(if: $bedroomAttempts is 0)[
+	(if: $bedroomAttempts is 0 and $inventoryArray is an empty)[
     	Avery has a lot of great things in their bedroom.  Comfy blankets, their gaming\
-        console, stuff like that.&lt;br&gt;
+        console, stuff like that.&lt;br&gt;&lt;br&gt;
         I walk to the bedroom but the door is still closed.  Maybe I should give Avery some\
-        space.
-
-		[[Search the living room]]
-		[[Search the kitchen]]
-		[[Search the bathroom]]
+        space.&lt;br&gt;&lt;br&gt;
+        I&#39;ll look somewhere else for something to help.&lt;br&gt;&lt;br&gt;
+		[[Search the living room-&gt;living-room]]&lt;br&gt;
+		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
+		[[Search the bathroom-&gt;bathroom]]
         (set: $bedroomAttempts to 1)
 	]
-    (else-if: $bedroomAttempts is 1)[
-    I can hear Avery inside.  They’re crying loudly.  I knock on the door and there’s no\
-    response. Maybe they can’t hear me over their crying?  I wait a couple minutes to see\
-    if they’ll open the door.  Still nothing.  I call through the door that I have the &lt;item&gt;.  But Avery continues to cry.  Maybe something else will help.  I put down the &lt;item&gt; and go to find something else.
+	(else-if: $bedroomAttempts &lt;= 1 and $inventoryArray is not an empty)[
+    	I can hear Avery inside.  They’re crying loudly.  I knock on the door and there’s no\
+    	response. Maybe they can’t hear me over their crying?  I wait a couple minutes\
+        to see if they’ll open the door.  Still nothing.  I call through the door that I have the\
+        (print: (lowercase: $inventoryArray&#39;s 1st)).  But Avery continues to cry.  Maybe\
+        something else will help.&lt;br&gt;&lt;br&gt;
+        I put down the (print: (lowercase:$inventoryArray&#39;s 1st)) and go to find something\
+        else.&lt;br&gt;&lt;br&gt;
 
-[[Search the living room]]
-[[Search the kitchen]]
-[[Search the bathroom]]
-
+		[[Search the living room-&gt;living-room]]&lt;br&gt;
+		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
+		[[Search the bathroom-&gt;bathroom]]
+        (set: $inventoryArray to (a:))
+        (set: $bedroomAttempts to 2)
+	]
+    (else-if: $bedroomAttempts is 2 and $inventoryArray is not an empty)[
+    	Avery’s crying has mostly subsided.  I knock on the door again.  Still no reply.  I call\
+        out and ask if they’re okay.  Avery doesn’t respond.  But they always respond to\
+        me when I try to get their attention.  Something is wrong.  This is wrong.  I knock\
+        again, hoping that maybe this time it’ll be different.  But it isn’t.  I feel my heart\
+        beating fast, my breath quickening.&lt;br&gt;&lt;br&gt;
+        I drop the (print: (lowercase: $inventoryArray&#39;s 1st)).&lt;br&gt;&lt;br&gt;
+        One more try.&lt;br&gt;&lt;br&gt;
+        
+		[[Search the living room-&gt;living-room]]&lt;br&gt;
+		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
+		[[Search the bathroom-&gt;bathroom]]
+        (set: $inventoryArray to (a:))
+        (set: $bedroomAttempts to 3)
+    ]
+   (else-if: $bedroomAttempts is 3 and $inventoryArray is not an empty)[
+    	When I return I’m surprised to see the door to the bedroom open.  Maybe Avery\
+        is feeling better already?  I put down the \
+        (print: (lowercase: $inventoryArray&#39;s 1st)) and slowly walk into the room.  \
+        As if walking in too suddenly might startle them.&lt;br&gt;&lt;br&gt;
+        [[Next-&gt;climax-1]]
+    ]
+   (else-if: $bedroomAttempts &gt;= 1 and $inventoryArray is an empty)[
+    	I need to search the apartment and find something else that could help.&lt;br&gt;&lt;br&gt;
+        
+        [[Search the living room-&gt;living-room]]&lt;br&gt;
+		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
+		[[Search the bathroom-&gt;bathroom]]
+	]
+    
 }</tw-passagedata><tw-passagedata pid="15" name="book" tags="" position="600,1200" size="100,100">{
     The paperback book on the couch isn’t in the best condition.  Not because Avery\
     doesn’t take care of their things.  This is a book I’ve seen them read over and over\
@@ -196,7 +232,7 @@ If you’d like to see the content warnings for this game, click the link below.
 	[[Search the living room-&gt;living-room]]&lt;br&gt;
 	[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 	[[Search the bathroom-&gt;bathroom]]&lt;br&gt;
-}</tw-passagedata><tw-passagedata pid="18" name="Search the living room" tags="" position="775,1575" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Search the kitchen" tags="" position="900,1575" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Search the bathroom" tags="" position="1025,1575" size="100,100"></tw-passagedata></tw-storydata>
+}</tw-passagedata><tw-passagedata pid="18" name="climax-1" tags="" position="1025,1325" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
