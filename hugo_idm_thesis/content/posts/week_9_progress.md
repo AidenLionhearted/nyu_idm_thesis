@@ -64,3 +64,93 @@ And I think that's an important message to send to someone who is moving through
 I started importing the script into Twine.  I learned a few things while I was working on the importing.  You can use the toolbar in the passage windows to change text color.  It writes the hook for you.  In fact, there's a whole menu to set up different macros and coding without having to write the code.  And I feel silly and like I wasted a lot of time struggling with Harlowe and Twine in past weeks.  But I suppose knowing how to code makes things easier when you need to troubleshoot.
 
 If you get annoyed by line wrap in the passage editor, use the escape character `\` at the end of the line and press enter, the next word will automatically indent to match the first line.  I feel so much better now.
+
+# 11/2/26
+
+## More Importing and Handling Bedroom logic
+
+I continued working on importing my script into Twine.  And in doing so found some wrinkles in the if/else logic that I had to fix.
+
+I have two variables that matter in this context.  One is `$inventoryArray` and the other is `$bedroomAttempts`.  
+
+The inventory array is what holds the objects that Gwen picks up.  You can see its contents in the footer of the game that shows the inventory.
+The `bedroomAttempts` variable keeps track of how many times the player has visited the bedroom.  This is important because each time Gwen goes to the bedroom, she gets more and more anxious about Avery not responding to her.
+
+Here's the rub.  If the player goes to the bedroom without ever having been there (bedroomAttempts = 0) and their inventory is empty, it shows a passage about giving Avery some space.  This changes the bedroomAttempts variable to 1.  Since the player has been there once.
+
+> Avery has a lot of great things in their bedroom.  Comfy blankets, their gaming console, stuff like that.
+>
+>I walk to the bedroom but the door is still closed.  Maybe I should give Avery some space.
+
+But what happens if the player doesn't go there first and goes and picks up an object elsewhere?  The attempts variable is still 0 but their inventory array isn't empty.  The player would be at the bedroom but it wouldn't display anything because there is no `if-else` statement to account for that combination.
+
+So I changed the conditional from the player has been there once and their inventory isn't empty to if the player has been there 1 or fewer times and their inventory is not empty.
+
+> I can hear Avery inside.  They’re crying loudly.  I knock on the door and there’s no response. Maybe they can’t hear me over their crying?  I wait>a couple minutes to see if they’ll open the door.  Still nothing.  I call through the door that I have the <item>.  But Avery continues to cry.
+>Maybe something else will help.  I put down the <item> and go to find something else.
+
+And this is fine.  Gwen is worried but hasn't started panicking.  But now we have another condition.  If the player has been to the bedroom at least once and their inventory is empty.  I've written it so that the prose displays, "I need to search the apartment and find something else that could help."  I suppose that works.  It's brief but it's something.  I also had to add logic to empty the array after going to the bedroom because Gwen puts down the object so she can get another one.
+
+Here is the code so far.  It's not finished yet.
+
+```
+{
+	(if: $bedroomAttempts is 0 and $inventoryArray is an empty)[
+    	Avery has a lot of great things in their bedroom.  Comfy blankets, their gaming\
+        console, stuff like that.<br><br>
+        I walk to the bedroom but the door is still closed.  Maybe I should give Avery\
+        some space.<br><br>
+        I'll look somewhere else for something to help.<br><br>
+		[[Search the living room->living-room]]<br>
+		[[Search the kitchen->kitchen]]<br>
+		[[Search the bathroom->bathroom]]
+        (set: $bedroomAttempts to 1)
+	]
+	(else-if: $bedroomAttempts <= 1 and $inventoryArray is not an empty)[
+    	I can hear Avery inside.  They’re crying loudly.  I knock on the door and there’s no\
+    	response. Maybe they can’t hear me over their crying?  I wait a couple minutes\
+        to see if they’ll open the door.  Still nothing.  I call through the door that I have the\
+        (print: (lowercase: $inventoryArray's 1st)).  But Avery continues to cry.  Maybe\
+        something else will help.<br><br>
+        I put down the (print: (lowercase:$inventoryArray's 1st)) and go to find something\
+        else.<br><br>
+
+		[[Search the living room->living-room]]<br>
+		[[Search the kitchen->kitchen]]<br>
+		[[Search the bathroom->bathroom]]
+        (set: $inventoryArray to (a:))
+        (set: $bedroomAttempts to 2)
+	]
+    (else-if: $bedroomAttempts is 2 and $inventoryArray is not an empty)[
+    	Avery’s crying has mostly subsided.  I knock on the door again.  Still no reply.  I call\
+        out and ask if they’re okay.  Avery doesn’t respond.  But they always respond to\
+        me when I try to get their attention.  Something is wrong.  This is wrong.  I knock\
+        again, hoping that maybe this time it’ll be different.  But it isn’t.  I feel my heart\
+        beating fast, my breath quickening.<br><br>
+        I drop the (print: (lowercase: $inventoryArray's 1st)).<br><br>
+        One more try.<br><br>
+        
+		[[Search the living room->living-room]]<br>
+		[[Search the kitchen->kitchen]]<br>
+		[[Search the bathroom->bathroom]]
+        (set: $inventoryArray to (a:))
+        (set: $bedroomAttempts to 3)
+    ]
+   (else-if: $bedroomAttempts is 3 and $inventoryArray is not an empty)[
+    	When I return I’m surprised to see the door to the bedroom open.  Maybe Avery\
+        is feeling better already?  I put down the \
+        (print: (lowercase: $inventoryArray's 1st)) and slowly walk into the room.  \
+        As if walking in too suddenly might startle them.<br><br>
+        [[Next->climax-1]]
+    ]
+   (else-if: $bedroomAttempts >= 1 and $inventoryArray is an empty)[
+    	I need to search the apartment and find something else that could help.<br><br>
+        
+        [[Search the living room->living-room]]<br>
+		[[Search the kitchen->kitchen]]<br>
+		[[Search the bathroom->bathroom]]
+	]    
+}
+```
+
+Other than all this, the only other thing that I want to change for now is the passage links that say "Bring what I’m holding to Avery".  Because the player might not be holding anything.  And that text wouldn't make sense.  So I'm probably going to change it to somethiing like, "Go to the bedroom".  I don't super like it because the other links say "Search the <location>" but Gwen isn't going to the bedroom to search since the door is closed.  But maybe it's okay.  If I do use the phrase "go to" I'll probably put it as the bottom link so it doesn't look weird being between the ones that say "search".
