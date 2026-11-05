@@ -26,7 +26,7 @@ tw-include[type="footer"] {
   padding: 10px;
   border-style: groove none none none;
   font-size: 0.8em
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="header" color="blue"></tw-tag><tw-tag name="inventory" color="purple"></tw-tag><tw-tag name="footer" color="purple"></tw-tag><tw-tag name="no-footer" color="blue"></tw-tag><tw-tag name="startup" color="yellow"></tw-tag><tw-passagedata pid="1" name="title-screen" tags="no-footer" position="700,300" size="100,100">Hello Player,
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="header" color="blue"></tw-tag><tw-tag name="inventory" color="purple"></tw-tag><tw-tag name="footer" color="purple"></tw-tag><tw-tag name="no-footer" color="blue"></tw-tag><tw-tag name="startup" color="yellow"></tw-tag><tw-tag name="center-zone" color="yellow"></tw-tag><tw-passagedata pid="1" name="title-screen" tags="no-footer" position="700,300" size="100,100">Hello Player,
 
 You are about to experience the story of Gwen and their friend Avery.
 
@@ -48,13 +48,19 @@ If you’d like to see the content warnings for this game, click the link below.
     (set: $bedroomAttempts to 0)
 }</tw-passagedata><tw-passagedata pid="5" name="intro-1" tags="no-footer" position="900,400" size="100,100">The sun is shining through the bedroom window.  I slowly open my eyes and sit up.  The familiar clicks of a keyboard’s keys are coming from the living room.  Avery must already be working.
 
-[[Next-&gt;intro-2]]</tw-passagedata><tw-passagedata pid="6" name="intro-2" tags="no-footer" position="900,525" size="100,100">Something doesn’t feel right though.  As if the usual energy of the room has been sucked out of it.  Things are out of place.  The TV remote is on the floor.  Piles of mail and dirty dishes have accumulated on the coffee table.  A coat is draped over the couch.  I look over at Avery and they have a box of tissues on their desk.  The waste basket is overflowing with them.  Is Avery sick?
+[[Next-&gt;intro-2]]</tw-passagedata><tw-passagedata pid="6" name="intro-2" tags="no-footer" position="900,525" size="100,100">Something doesn’t feel right though.  As if the usual energy of the room has been sucked out of it.  Things are out of place.  The TV remote is on the floor.  Piles of mail and dirty dishes have accumulated on the coffee table.  A coat is draped over the couch.  I look over at Avery and they have a box of tissues on their desk.  The waste basket is overflowing with them.  
+
+Is Avery sick?
+
 [[Next-&gt;intro-3]]</tw-passagedata><tw-passagedata pid="7" name="intro-3" tags="no-footer" position="900,650" size="100,100">As I go towards the kitchen I can hear Avery in a meeting with their boss.  Avery’s voice is quavering as they try to maintain composure.
+
 [[Next-&gt;intro-4]]</tw-passagedata><tw-passagedata pid="8" name="intro-4" tags="no-footer" position="900,775" size="100,100">(text-colour:#69db7c)[Avery:] I haven’t gotten to work on that project yet.
 (text-colour:#ffa8a8)[Boss:] This initiative is a high priority.  It needs to be finished as soon as possible.
 (text-colour:#69db7c)[Avery:] I apologize.  It’s just that I lost my&amp;mdash;
 (text-colour:#ffa8a8)[Boss:] I know.  Why don’t you take the rest of the day off.  Be ready to work tomorrow.
+
 [[Next-&gt;intro-5]]</tw-passagedata><tw-passagedata pid="9" name="intro-5" tags="no-footer" position="900,900" size="100,100">Avery’s voice catches.  I can tell that they’re trying very hard not to audibly cry.  They thank their boss and end the meeting.  After a sigh they start crying loudly.  I move to go over to them and comfort them but they get up and go into the bedroom and close the door.
+
 [[Next-&gt;intro-6]]</tw-passagedata><tw-passagedata pid="10" name="intro-6" tags="no-footer" position="900,1025" size="100,100">I need to do something.  It’s really hard seeing them in so much pain.  But I’ve always been able to cheer them up.  So maybe if I can distract them somehow or bring them something they like, they’ll feel better!
 
 [[Search the living room-&gt;living-room]]
@@ -65,13 +71,13 @@ If you’d like to see the content warnings for this game, click the link below.
     	I look around the living room.  I can still feel the energy of Avery’s distress\
         and it refuses to dissipate.  There has to be something here that could help.&lt;br&gt;&lt;br&gt;
 		[[There’s a book on the couch-&gt;book]]&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+		[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 		[[Search the bathroom-&gt;bathroom]]
     ]
     (else:)[
     	I look around the living room again.  There’s nothing else to do here.&lt;br&gt;&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+	    [[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 		[[Search the bathroom-&gt;bathroom]]
 	]
@@ -87,13 +93,13 @@ If you’d like to see the content warnings for this game, click the link below.
 		As I walk around trying to find something I could take to Avery, my eyes land on the\
         back door.  Would getting some fresh air help? &lt;br&gt;&lt;br&gt;
 		[[Next to the door is a frisbee-&gt;frisbee]]&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+		[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the living room-&gt;living-room]]&lt;br&gt;
 		[[Search the bathroom-&gt;bathroom]]
 	]
     (else:)[
     	I look around the kitchen again.  There’s nothing left to do here.&lt;br&gt;&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+		[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the living room-&gt;living-room]]&lt;br&gt;
 		[[Search the bathroom-&gt;bathroom]]
 	]
@@ -103,14 +109,14 @@ If you’d like to see the content warnings for this game, click the link below.
         the sink and bathtub are very soft.  There are a lot of nice smelling things in here\
         too.  I look around the small space to see if anything jumps out at me.&lt;br&gt;&lt;br&gt;
 		[[There’s a bottle of lotion on the edge of the tub-&gt;bottle]]&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+		[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the living room-&gt;living-room]]&lt;br&gt;
 		[[Search the kitchen-&gt;kitchen]]
     ]
     (else:)[
     	I take another look around the bathroom.  There’s nothing else in here to take.
         &lt;br&gt;&lt;br&gt;
-		[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+		[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 		[[Search the living room-&gt;living-room]]&lt;br&gt;
 		[[Search the kitchen-&gt;kitchen]]
 	]
@@ -187,7 +193,7 @@ If you’d like to see the content warnings for this game, click the link below.
            		I can only carry one thing at a time.
            ]
 	]&lt;br&gt;
-	[[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+	[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 	[[Search the living room-&gt;living-room]]&lt;br&gt;
 	[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 	[[Search the bathroom-&gt;bathroom]]
@@ -196,7 +202,7 @@ If you’d like to see the content warnings for this game, click the link below.
     Thankfully we have a tall fence so the frisbee never escapes the yard.&lt;br&gt;
     Our favorite time to go outside is during the fall.  The weather is getting chillier and I\
     love the sound of leaves crunching under our feet.  Sometimes you can smell a\
-    fire going.  The smell of the burning wood is nice, but it does make me sneeze.&lt;br&gt;
+    fire going.  The smell of the burning wood is nice, but it does make me sneeze.&lt;br&gt;&lt;br&gt;
 	It’s spring now, so unfortunately there aren&#39;t any leaves to crunch.  But the flowers are\
     blooming and it’s very pretty.  We should definitely play with the frisbee.&lt;br&gt;&lt;br&gt;
     
@@ -209,7 +215,7 @@ If you’d like to see the content warnings for this game, click the link below.
            		I can only carry one thing at a time.
            ]
 	]&lt;br&gt;
-    [[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+	[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 	[[Search the living room-&gt;living-room]]&lt;br&gt;
 	[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 	[[Search the bathroom-&gt;bathroom]]&lt;br&gt;
@@ -227,7 +233,7 @@ If you’d like to see the content warnings for this game, click the link below.
            		I can only carry one thing at a time.
            ]
 	]&lt;br&gt;
-    [[Bring what I’m holding to Avery-&gt;bedroom]]&lt;br&gt;
+	[[Go to the bedroom-&gt;bedroom]]&lt;br&gt;
 	[[Search the living room-&gt;living-room]]&lt;br&gt;
 	[[Search the kitchen-&gt;kitchen]]&lt;br&gt;
 	[[Search the bathroom-&gt;bathroom]]&lt;br&gt;
@@ -290,14 +296,9 @@ Who am I now?  Where do I go?  Can I go somewhere?
 
 [[Next-&gt;ending-3]]</tw-passagedata><tw-passagedata pid="39" name="ending-3" tags="no-footer" position="900,4025" size="100,100">The small dog’s eyes fill with warmth.  I turn around to leave.  I hear the sound of the small dog’s paws scratching at the door.  When I’m down the hall I hear the door open slowly.
 
-[[Next-&gt;ending-4]]</tw-passagedata><tw-passagedata pid="40" name="ending-4" tags="no-footer" position="900,4150" size="100,100">{
-	(set: $slowTransition to (transition:&quot;fade&quot;) + (transition-time: 3s))
-	$slowTransition[And I breathe.]&lt;br&gt;&lt;br&gt;
-	(align: &quot;=&gt;&lt;=&quot;)+(transition:&quot;fade&quot;)+(transition-time: 5s)+(transition-delay:5s)[The End]
-}
+[[Next-&gt;ending-4]]</tw-passagedata><tw-passagedata pid="40" name="ending-4" tags="no-footer" position="900,4150" size="100,100">
 
-
-</tw-passagedata></tw-storydata>
+(align:&quot;=&gt;&lt;=&quot;) + (transition:&quot;fade&quot;) + (transition-time: 3s)[And I breathe.]&lt;br&gt;&lt;br&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
