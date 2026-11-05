@@ -290,11 +290,11 @@ Who am I now?  Where do I go?  Can I go somewhere?
 
 [[Next-&gt;ending-3]]</tw-passagedata><tw-passagedata pid="39" name="ending-3" tags="no-footer" position="900,4025" size="100,100">The small dog’s eyes fill with warmth.  I turn around to leave.  I hear the sound of the small dog’s paws scratching at the door.  When I’m down the hall I hear the door open slowly.
 
-[[Next-&gt;ending-4]]</tw-passagedata><tw-passagedata pid="40" name="ending-4" tags="no-footer" position="900,4150" size="100,100">(set: $slowTransition to (transition:&quot;fade&quot;) + (transition-time: 5s))
-$slowTransition[And I breathe.]
-
-(align: &quot;=&gt;&lt;=&quot;)+(transition:&quot;fade&quot;)+(transition-time: 5s)+(transition-delay:10s)[The End]
-
+[[Next-&gt;ending-4]]</tw-passagedata><tw-passagedata pid="40" name="ending-4" tags="no-footer" position="900,4150" size="100,100">{
+	(set: $slowTransition to (transition:&quot;fade&quot;) + (transition-time: 3s))
+	$slowTransition[And I breathe.]&lt;br&gt;&lt;br&gt;
+	(align: &quot;=&gt;&lt;=&quot;)+(transition:&quot;fade&quot;)+(transition-time: 5s)+(transition-delay:5s)[The End]
+}
 
 
 </tw-passagedata></tw-storydata>
