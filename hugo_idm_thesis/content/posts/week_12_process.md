@@ -53,4 +53,29 @@ Disenfranchised grief is when others do not see the person's grief as legitimate
 
 [[Play->intro-1]]
 ```
+# 11/25/2026
+
+## Post-Playtesting Improvements
+
+### Dedication Page
+
+I thought that making a dedication page would take 15 minutes tops.  But of course I didn't take into account the time I needed to make it look good.
+
+I started by making the dedication it's own passage.  But Twine doesn't support automatically going to another passage with a delay.  The macro `go-to` is immediate.  The only other option would be to apply transitions to links, but that's not what I wanted to do.
+
+So the dedication page is in the same passage as the "And I breathe" passage.  I discovered the `after` macro that performs the code it's attatched to after a specified amount of time.  I also used `replace` to replace the "And I breathe" hook with the dedication hook.
+
+```
+{
+	(align:"=><=") + (transition:"fade") + (transition-time: 3s)|breathe>[And I breathe.]
+
+    (after: 5s)[
+    	(align:"=><=") +  (transition:"fade") + (transition-time: 5s) + (replace: ?breathe)  \
+        [<img 	src="gwen.jpg" alt="Picture of my dog, Gwen" width="378" height="504">
+		<br>
+		In Memory of Gwen<br>
+		July 25, 2010 - June 27, 2025]
+	]
+}
+```
 
